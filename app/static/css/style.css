@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Container */
+
+.container{
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+
+/* Header */
+
+header{
+    background: linear-gradient(to right, #0f172a, #1e293b);
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header h1{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+
+/* Navigation */
+
+nav{
+    text-align: center;
+}
+
+nav a{
+    color: #e2e8f0;
+    text-decoration: none;
+    margin: 0 14px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+nav a:hover{
+    color: #38bdf8;
+}
+
+
+/* Main */
+
+main{
+    flex: 1;
+    padding: 40px 0;
+}
+
+
+/* Footer */
+
+footer{
+    background-color: #0f172a;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 16px 0;
+    margin-top: auto;
+    font-size: 14px;
+}
+
+
+/* Flash */
+
+.flash{
+    padding: 14px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+    font-weight: 500;
+}
+
+
+/* Success */
+
+.flash.success{
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+
+/* Danger */
+
+.flash.danger{
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+
+/* Info */
+
+.flash.info{
+    background-color: #dbeafe;
+    color: #1d4ed8;
+}
+
+
+/* Auth Box */
+
+.login-box{
+    max-width: 420px;
+    margin: auto;
+    background-color: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+
+/* Auth Title */
+
+.login-box h2{
+    text-align: center;
+    margin-bottom: 25px;
+    color: #0f172a;
+}
+
+
+/* Form Group */
+
+.form-group{
+    margin-bottom: 20px;
+}
+
+
+/* Labels */
+
+.form-group label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #334155;
+}
+
+
+/* Inputs */
+
+.form-group input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+
+/* Input Focus */
+
+.form-group input:focus{
+    outline: none;
+    border-color: #0ea5e9;
+    box-shadow: 0 0 6px rgba(14,165,233,0.3);
+}
+
+
+/* Main Button */
+
+.btn{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0f172a;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+/* Button Hover */
+
+.btn:hover{
+    background-color: #1e293b;
+}
+
+
+/* Register Link */
+
+.login-box + p{
+    text-align: center;
+    margin-top: 16px;
+}
+
+
+/* Link Style */
+
+.login-box + p a{
+    color: #0284c7;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* Link Hover */
+
+.login-box + p a:hover{
+    text-decoration: underline;
+}
+
+
+/* Task Box */
+
+.task-box{
+    background-color: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+}
+
+
+/* Task Title */
+
+.task-box h2{
+    margin-bottom: 22px;
+    color: #0f172a;
+}
+
+
+/* Task Form */
+
+.task-form{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* Task Input */
+
+.task-form input{
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+
+/* Add Button */
+
+.task-form .btn{
+    width: auto;
+    padding: 12px 22px;
+}
+
+
+/* Clear Button */
+
+.btn-clear{
+    background-color: #dc2626;
+    margin-bottom: 20px;
+}
+
+
+/* Clear Hover */
+
+.btn-clear:hover{
+    background-color: #b91c1c;
+}
+
+
+/* Table */
+
+.task-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* Table Cells */
+
+.task-table th,
+.task-table td{
+    padding: 15px;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+
+/* Table Head */
+
+.task-table th{
+    background-color: #f8fafc;
+    color: #334155;
+}
+
+
+/* Status Badge */
+
+.badge{
+    padding: 6px 12px;
+    border-radius: 20px;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* Pending */
+
+.badge.pending{
+    background-color: #f59e0b;
+}
+
+
+/* Working */
+
+.badge.working{
+    background-color: #0284c7;
+}
+
+
+/* Done */
+
+.badge.done{
+    background-color: #16a34a;
+}
+
+
+/* Small Button */
+
+.btn-small{
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #0ea5e9;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+/* Small Hover */
+
+.btn-small:hover{
+    background-color: #0284c7;
+}
+
+
+/* Responsive */
+
+@media(max-width: 600px){
+
+    .task-form{
+        flex-direction: column;
+    }
+
+    .task-form .btn{
+        width: 100%;
+    }
+
+    .task-table{
+        font-size: 14px;
+    }
+
+    header h1{
+        font-size: 24px;
+    }
+}
